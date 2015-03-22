@@ -49,10 +49,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
 <head>
   <?php print $head; ?>
-  <meta name="geo.region" content="RU-VOR" />
-  <meta name="geo.placename" content="Воронеж" />
-  <meta name="geo.position" content="51.657822;39.20909" />
-  <meta name="ICBM" content="51.657822, 39.20909" />
+  <meta name="DC.title" content="Доктор Андрусов" />
+  <meta name="geo.region" content="RU-MOW" />
+  <meta name="geo.placename" content="Москва" />
+  <meta name="geo.position" content="55.8;37.6" />
+  <meta name="ICBM" content="55.8, 37.6" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
