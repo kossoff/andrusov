@@ -237,7 +237,7 @@
         <div class="copyright">
           &copy;
           <?php
-            $foundation_date = 2014; // год создания сайта
+            $foundation_date = 2015; // год создания сайта
 
             if ( date('Y') > $foundation_date )
               print $foundation_date . '&nbsp;&mdash;&ensp;';
