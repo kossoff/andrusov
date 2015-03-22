@@ -217,21 +217,19 @@
   <?php endif; ?>
   <div class="row">
     <div class="large-6 columns">
-      <div class="vcard">
-        <div>
-          <span class="category fn org">category fn org</span>
-       </div>
-       <div class="adr">
-          <span class="country-name">country-name</span>,
-          <span class="postal-code">postal-code</span>,
-          <span class="locality">locality (city)</span>,
-          <span class="street-address">street-address</span>
-       </div>
-       <div>Телефон: <span class="tel">tel</span>, <span class="tel">tel</span></div>
-        <span class="url">
-          <span class="value-title" title="http://example.com">url</span>
+      <div id="hcard" class="vcard">
+        <span class="fn n">
+          <span class="given-name">Юрий</span>
+          <span class="additional-name">Вадимович</span>
+          <span class="family-name">Андрусов</span>
         </span>
+      <a class="email" href="mailto:me@dr-andrusov.ru">me@dr-andrusov.ru</a>
+      <div class="adr">
+        <span class="locality">Москва</span>,
+        <span class="country-name">Россия</span>
       </div>
+      <div><span class="category">врач-невролог</span>, <span class="category">специалист по электронейромиографии</span></div>
+    </div>
     </div>
 
     <div class="large-6 columns">
