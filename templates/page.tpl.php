@@ -235,7 +235,15 @@
     <div class="large-6 columns">
       <?php if ($site_name) : ?>
         <div class="copyright">
-          &copy; 2015 &mdash; <?php print date('Y') . ' ' . $site_name . '.<br />' . t('Все права защищены.'); ?>
+          &copy;
+          <?php
+            $foundation_date = 2014; // год создания сайта
+
+            if ( date('Y') > $foundation_date )
+              print $foundation_date . '&nbsp;&mdash;&ensp;';
+
+            print date('Y') . ' ' . $site_name . '.<br />' . t('Все права защищены.');
+          ?>
         </div>
         <hr />
         <div class="made-by">
