@@ -1,0 +1,5 @@
+.custom-button-class {
+  @include button-base;
+  @include button-style($bg:$white, $radius:false, $disabled:false, $bg-hover:$primary-color, $border-color:$primary-color);
+  color: $primary-color;
+}

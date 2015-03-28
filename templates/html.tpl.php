@@ -54,6 +54,7 @@
   <meta name="geo.placename" content="Москва" />
   <meta name="geo.position" content="55.8;37.6" />
   <meta name="ICBM" content="55.8, 37.6" />
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css">
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>

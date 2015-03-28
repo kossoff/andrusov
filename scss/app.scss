@@ -106,7 +106,7 @@
 
 // Modules
 // @import "modules/block";
-// @import "modules/button";
+@import "modules/button";
 
 // States
 // @import "states/collapse";
@@ -118,3 +118,8 @@
 // @import "vendor/ie";
 
 @import "foundation-icons";
+
+body {
+  background: #E7E7E7 url("../images/bg.png") repeat-y scroll center top;
+}
+
