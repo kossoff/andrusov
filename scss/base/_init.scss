@@ -1372,8 +1372,8 @@ $topbar-height: rem-calc(60); // rem-calc(45);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-weight: 700; //$font-weight-normal;
+$topbar-title-font-size: rem-calc(23); // rem-calc(17);
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $white; // $oil;
