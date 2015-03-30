@@ -61,6 +61,19 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('autoprefixer-core')({browsers: 'last 2 version'}).postcss,
+          require('csswring').postcss
+        ]
+      },
+      dist: {
+        src: 'css/*.css'
+      }
+    },
+
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -80,7 +93,7 @@ module.exports = function(grunt) {
           'js/libs.min.js': [jsLibs],
           'js/foundation.min.js': [jsFoundation],
           'js/app.min.js': [jsApp]
-      }
+        }
       }
     },
 
@@ -89,7 +102,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: '<%= global_vars.theme_scss %>/**/*.scss',
-        tasks: ['sass'],
+        tasks: ['sass', 'postcss'],
         options: {
           livereload: true
         }
@@ -106,6 +119,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build', ['jshint','uglify','sass']);
+  grunt.registerTask('build', ['jshint','uglify','sass','postcss']);
   grunt.registerTask('default', ['build', 'watch']);
 };
